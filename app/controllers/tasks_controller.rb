@@ -8,7 +8,7 @@ class TasksController < ApplicationController
     task.update_attributes(task_params)
     render json: task
   end
- 
+
   def create
     task = Task.create(task_params)
     render json: task
